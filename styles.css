@@ -170,7 +170,13 @@ nav {
 
 .header__image {
   position: relative;
+  z-index: -1;
 }
+/* @media (max-width: 768px) {
+  .header__image{
+    
+  }
+} */
 
 .header__image::before {
   content: "o";
@@ -641,6 +647,49 @@ nav {
 
   .footer__bar {
     text-align: center;
+  }
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #303030;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 1, 1, 0.199);
+  }
+
+  .nav__links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    color: red;
+  }
+
+  .nav__links li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav__links li a {
+    color: #ff8c2d;
+    text-decoration: none;
   }
 }
 
