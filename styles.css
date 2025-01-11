@@ -44,7 +44,7 @@
   border: none;
   font-size: 1rem;
   color: var(--white);
-  background-color: var(--secondary-color);
+  background-color: red;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;

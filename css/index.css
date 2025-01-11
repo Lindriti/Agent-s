@@ -696,3 +696,92 @@ nav {
     text-decoration: none;
   }
 }
+
+
+/* Kontejneri kryesor */
+#profile-container {
+  display: flex; /* Përdor Flexbox për vendosjen horizontale */
+  flex-direction: column; /* Rendis elementet vertikalisht */
+  align-items: center; /* Qendërzon elementet horizontalisht */
+  justify-content: center; /* Qendërzon elementet vertikalisht */
+  gap: 20px; /* Hapësirë midis elementeve */
+  max-width: 600px; /* Gjerësia maksimale e kontejnerit */
+  margin: 0 auto; /* Qendër në ekran horizontalisht */
+  padding: 20px;
+  background-color: #1a1a1a; /* Ngjyra e sfondit */
+  border-radius: 10px; /* Cepa të rrumbullakosur */
+  color: white; /* Ngjyra e tekstit */
+  height: 100vh; /* Lartësia e plotë e ekranit */
+}
+
+/* Stilizimi i imazhit */
+#profile-pic {
+  width: 100px; /* Gjerësia e fotos */
+  height: 100px; /* Lartësia e fotos */
+  border-radius: 50%; /* Foto rrethore */
+  object-fit: cover; /* Përshtatja e imazhit brenda rrethit */
+}
+
+/* Teksti i profilit */
+#profile-info {
+  text-align: center; /* Qendërzo tekstin */
+}
+
+#display{
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  margin-bottom: 0;
+}
+
+#role {
+  font-size: 16px;
+  color: gray;
+  margin: 5px 0;
+  margin-bottom: 0;
+}
+
+#review {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+.review__member {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.review__member img {
+  max-width: 100px;
+  border-radius: 100%;
+}
+
+.review__member__details h4 {
+  margin-bottom: 0;
+}
+
+/* Stilizimi i butonave */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: darkorange;
+}
